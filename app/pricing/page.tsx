@@ -75,11 +75,11 @@ const Pricing = () => {
      bg-grid-white/[0.02] relative overflow-hidden">
 
 <Navbar
-             scrollToWebsiteDesign={() => {}}
-             scrollToGraphicDesign={() => {}}
-             scrollToShopifyStores={() => {}}
-             scrollToBrands={() => {}}
-              scrollToServices={() => {}}
+            //  scrollToWebsiteDesign={() => {}}
+            //  scrollToGraphicDesign={() => {}}
+            //  scrollToShopifyStores={() => {}}
+            //  scrollToBrands={() => {}}
+            //   scrollToServices={() => {}}
       />
 
 <div className="flex items-center justify-center flex-col   ">
