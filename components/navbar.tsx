@@ -69,9 +69,9 @@ const DropDownMenu: React.FC<DropDownMenuProps> = ({ onClose }) => {
   );
 };
 
-interface NavbarProps {}
+// interface NavbarProps {}
 
-const Navbar = ({}: NavbarProps) => {
+const Navbar = () => {
   const [isDropDownVisible, setIsDropDownVisible] = useState(false);
   const [isBrandsOpen, setIsBrandsOpen] = useState(false);
   const [isPricingOpen, setIsPricingOpen] = useState(false);
