@@ -71,7 +71,7 @@ export default function Home() {
           Transforming businesses <br /> for global expansion
         </div>
         <p className="mt-4 text-lg font-normal  text-neutral-300 max-w-lg text-center mx-auto px-4">
-          Custom tailored solutions for your business offering a wide range of solutiions including legal and tax guidance, bookkeeping, audit and assurance.
+          At <span className="font-bold text-yellow-300">Warbler Consultancy</span> we provide custom tailored solutions for your business offering a wide range of solutiions including legal and tax guidance, bookkeeping, audit and assurance.
         </p>
 
         <Link
@@ -84,7 +84,7 @@ export default function Home() {
         <div className="w-full pt-20">
           <SliderOne />
         </div>
-        <div ref={websiteDesignRef}>
+        {/* <div ref={websiteDesignRef}>
           <WebsiteDesign />
         </div>
         <div ref={graphicDesignRef}>
@@ -95,7 +95,7 @@ export default function Home() {
         </div>
         <div ref={brandsRef}>
           <Brands />
-        </div>
+        </div> */}
         <div id ='services'>
         <Services />
         </div>

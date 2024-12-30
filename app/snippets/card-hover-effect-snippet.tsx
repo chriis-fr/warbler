@@ -11,44 +11,44 @@ export function CardHoverEffectDemo() {
 export const projects = [
     {
         icon : <div className="bg-blue-100 p-4 rounded-full"><PiMonitor className="w-8 h-8 text-blue-600" /></div>,
-        title: "Website Design",
+        title: "Comprehensive Regulatory Pathways",
         description:
-          "We build fully responsive websites that look great on all devices. Our websites are designed to convert visitors into customers.",
+          "We provide end-to-end guidance on local and global requirements, giving you freedom to innovate while remaining in step with the rules.",
       
       },
       {
         icon : <div className="bg-blue-100 p-4 rounded-full"><PiStorefront className="w-8 h-8 text-blue-600" /></div>,
-        title: "E-commerce Store",
+        title: "Integrated Tax Strategies",
         description:
-          "From small stores to large online retailers, we have the expertise to build a store that will help you grow your business.",
+          "Our solutions help lower your burden and address every legal nuance, safeguarding both short-term stability and long-term growth.",
        
       },
       {
         icon : <div className="bg-blue-100 p-4 rounded-full"><PiLock className="w-8 h-8 text-blue-600" /></div>,
-        title: "Authentication",
+        title: "Independent Financial Appraisals",
         description:
-          "Secure authentication solutions for your website or app. We use the latest technology to keep your data safe.",
+          "We deliver objective evaluations of financial records, revealing both key strengths and hidden inefficiencies to support confident decision-making.",
       
       },
       {
         icon : <div className="bg-blue-100 p-4 rounded-full"><PiMegaphone className="w-8 h-8 text-blue-600" /></div>,
-        title: "Social Media",
+        title: "Proactive Risk & Compliance Checks",
         description:
-          "We offer social media management and ad creation services. We can help you grow your social media presence and reach new customers.",
+          "By regularly reviewing internal safeguards and procedures, we keep your organization aligned with shifting industry benchmarks.",
       
       },
       {
         icon : <div className="bg-blue-100 p-4 rounded-full"><PiAppStoreLogo className="w-8 h-8 text-blue-600" /></div>,
-        title: "App Development",
+        title: "Strategic Advisory & Insights",
         description:
-          "We build custom mobile apps for iOS and Android. Our apps are designed to be user-friendly and performant.",
+          "Count on our consulting expertise to uncover opportunities, refine your operational blueprint, and steer your business toward ambitious goals.",
       
       },
       {
         icon : <div className="bg-blue-100 p-4 rounded-full"><PiHeadsetFill className="w-8 h-8 text-blue-600" /></div>,
-        title: "Support",
+        title: "Holistic Business Empowerment",
         description:
-          "We offer support for all our clients. We are here to help you with any issues or questions you may have.",
+          "We streamline the complexities of running a company so you can devote your full attention to scaling, innovating, and thriving in dynamic markets.",
      
       },
 ];
