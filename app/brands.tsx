@@ -3,6 +3,7 @@ import React from "react";
 
 import { Lora } from "next/font/google";
 import { cn } from "@/lib/utils";
+import image from "@/public/logo/whitebg.png"
 
 const font = Lora({
   subsets: ["latin"],
@@ -11,22 +12,22 @@ const font = Lora({
 
 const logos = [
   {
-    image: "/logo/logoipsum-248.svg",
+    image: "/teamImages/face.jpg",
   },
   {
-    image: "/logo/logoipsum-245.svg",
+    image: "/teamImages/face.jpg",
   },
   {
-    image: "/logo/logoipsum-225.svg",
+    image: "/teamImages/face.jpg",
   },
   {
-    image: "/logo/logoipsum-248.svg",
+    image: "/teamImages/face.jpg",
   },
   {
-    image: "/logo/logoipsum-249.svg",
+    image: "/teamImages/face.jpg",
   },
   {
-    image: "/logo/stripelogo.png",
+    image: "/teamImages/face.jpg",
   },
 ];
 
@@ -44,7 +45,7 @@ const Brands = () => {
           brands elevate their business.
         </p>
 
-        <div className="grid grid-cols-3  items-center justify-center  mx-auto md:w-3/5 cursor-pointer">
+        <div className="grid grid-cols-3 items-center justify-center mx-auto md:w-4/5 cursor-pointer">
           {logos.map((logo, i) => (
             <div key={i} className="p-4 md:p-20">
               <Image
@@ -55,6 +56,10 @@ const Brands = () => {
                 alt="logo"
                 className="w-full h-auto max-w-full rounded-lg"
               />
+              <div className=" pt-2 text-white m-1">
+                <p className="text-2xl font-bold">Member Name</p>
+                <p className="text-md">Member description/role</p>
+              </div>
             </div>
           ))}
         </div>
@@ -66,22 +71,22 @@ const Brands = () => {
           )}
         >
           &quot;We got rid of nearly a dozen different tools because of what
-          Bird does for us.&quot;
+          Warbler does for us.&quot;
         </div>
 
         <div className="items-center flex justify-center flex-col text-white">
           <Image
-            src="/images/logo.svg"
+            src={image}
             alt="logo"
             width={1000}
             height={1000}
-            className="pt-2 xl:pt-0  w-10 xl:w-14 "
+            className="pt-2 xl:pt-0  w-28 xl:w-36 "
           />
 
-          <div className=" text-center">
+          {/* <div className=" text-center">
             <div className="text-sm  font-medium pt-4">Naruto Uzumaki</div>
             <div className="text-sm">Marketing Director, Konoha Software</div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

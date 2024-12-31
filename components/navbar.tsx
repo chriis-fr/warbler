@@ -125,14 +125,14 @@ const Navbar = () => {
             cursor-pointer
           "
         >
-          <Link href="/website-design" className="hover:text-gray-50">
-            Website Design
+          <Link href="/" className="hover:text-gray-50">
+            Home
           </Link>
-          <Link href="/graphic-design" className="hover:text-gray-50">
-            Graphic Design
+          <Link href="/" className="hover:text-gray-50">
+            About Us
           </Link>
-          <Link href="/shopify-stores" className="hover:text-gray-50">
-            Shopify Stores
+          <Link href="/" className="hover:text-gray-50">
+            Latest
           </Link>
 
           {/* BRANDS */}
@@ -146,7 +146,7 @@ const Navbar = () => {
             cursor-pointer"
               onClick={handleBrandsClick}
             >
-              <span>Brands</span>
+              <span>Who are we?</span>
               {isBrandsOpen ? (
                 <ChevronUp className="ml-1 w-4 h-4 " />
               ) : (
@@ -163,25 +163,25 @@ const Navbar = () => {
                 "
               >
                 <Link
-                  href="/brands/item1"
+                  href="/team"
                   className="block hover:text-gray-700"
                   onClick={() => setIsBrandsOpen(false)}
                 >
-                  Brand Item 1
+                  Our Team
                 </Link>
                 <Link
-                  href="/brands/item2"
+                  href="/"
                   className="block hover:text-gray-700"
                   onClick={() => setIsBrandsOpen(false)}
                 >
-                  Brand Item 2
+                  Our Mission
                 </Link>
                 <Link
-                  href="/brands/item3"
+                  href="/"
                   className="block hover:text-gray-700"
                   onClick={() => setIsBrandsOpen(false)}
                 >
-                  Brand Item 3
+                  About Us
                 </Link>
               </div>
             )}
@@ -198,7 +198,7 @@ const Navbar = () => {
             cursor-pointer"
               onClick={handlePricingClick}
             >
-              <span>Pricing</span>
+              <span>What we do</span>
               {isPricingOpen ? (
                 <ChevronUp className="ml-1 w-4 h-4" />
               ) : (
@@ -215,25 +215,25 @@ const Navbar = () => {
                 "
               >
                 <Link
-                  href="/pricing#basic"
+                  href="/services"
                   className="block hover:text-gray-700"
                   onClick={() => setIsPricingOpen(false)}
                 >
-                  Basic Plan
+                  Tax and legal
                 </Link>
-                <Link
-                  href="/pricing#standard"
+                {/* <Link
+                  href="/services"
                   className="block hover:text-gray-700"
                   onClick={() => setIsPricingOpen(false)}
                 >
-                  Standard Plan
-                </Link>
+                  Financial Appraisals
+                </Link> */}
                 <Link
-                  href="/pricing#premium"
+                  href="/services"
                   className="block hover:text-gray-700"
                   onClick={() => setIsPricingOpen(false)}
                 >
-                  Premium Plan
+                  Advisory
                 </Link>
               </div>
             )}
