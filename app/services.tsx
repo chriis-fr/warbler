@@ -13,7 +13,7 @@ const Services = () => {
         <p className="mt-4 text-lg font-normal
           text-neutral-300 max-w-lg 
           text-center mx-auto">
-          From website design to social media management, We offer a wide range of services to help you grow your business. 
+          At <span className="font-bold text-yellow-300">Warbler</span>, we are dedicated to making a meaningful and sustainable impact. Partner with us to empower your business growth, whether you&apos;re expanding your reach, driving change, or thriving locally in this dynamic region. 
         </p>
 
         <CardHoverEffectDemo />

@@ -45,20 +45,22 @@ const FormSchema = z.object({
   job_title: z.string(),
   company_name: z.string(),
   help: z.enum([
-    "Evaluate Bird for my company",
+    "Evaluate Warbler for my company",
     "Learn More",
     "Get a Quote",
     "Other",
   ]),
   services: z.enum([
-    "Mobile App Develoment",
-    "Social Media Marketing",
-    "UI/UX Design",
-    "Branding",
-    "Website Development",
+    "Forensic Reviews",
+    "Compliance",
+    "Audit and Assurance",
+    "Consulting",
+    "Tax and Legal",
   ]),
   info: z.string(),
+  terms: z.boolean(),
 });
+  
 
 type FormValues = {
   first_name: string;
@@ -66,13 +68,13 @@ type FormValues = {
   email: string;
   job_title: string;
   company_name: string;
-  help: "Evaluate Bird for my company" | "Learn More" | "Get a Quote" | "Other";
+  help: "Evaluate Warbler for my company" | "Learn More" | "Get a Quote" | "Other";
   services:
-    | "Mobile App Develoment"
-    | "Social Media Marketing"
-    | "UI/UX Design"
-    | "Branding"
-    | "Website Development";
+    | "Forensic Reviews"
+    | "Compliance"
+    | "Audit and Assurance"
+    | "Consulting"
+    | "Tax and Legal";
   info: string;
   terms: boolean;
 };
@@ -91,7 +93,7 @@ export default function ContactForm() {
       job_title: "",
       company_name: "",
       help: "Learn More",
-      services: "Mobile App Develoment",
+      services: "Tax and Legal",
       info: "",
     },
   });
@@ -132,7 +134,7 @@ export default function ContactForm() {
       <div className="md:flex items-start justify-center md:py-20 px-6">
         <div className="">
           <div className="text-5xl font-medium  w-full md:w-2/3  pb-5 md:text-7xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
-            Contact our sales team
+            Contact our team
           </div>
           <div
             className="
@@ -141,7 +143,7 @@ export default function ContactForm() {
               text-gray-300
                     "
           >
-            Let&apos;s talk about how Bird can help your team work better.
+            Let&apos;s talk about how Warbler can help you work better.
           </div>
 
           <div className="bg-[#f6f5f4] md:w-4/5 space-y-6 p-4 rounded-2xl my-4 hidden md:flex md:flex-col">
@@ -263,13 +265,13 @@ export default function ContactForm() {
                       <SelectContent>
                         <div className="flex gap-4">
                           <SelectItem value="Mobile App Develoment">
-                          Mobile App Develoment
+                          Compliance
                           </SelectItem>
                         </div>
-                        <SelectItem value="Social Media Marketing">Social Media Marketing</SelectItem>
-                        <SelectItem value="51-200">51-200</SelectItem>
-                        <SelectItem value="501-1000">501-1000</SelectItem>
-                        <SelectItem value="1000+">1000+</SelectItem>
+                        <SelectItem value="Audit and Assurance">Audit and Assurance</SelectItem>
+                        <SelectItem value="Forensic Reviews">Forensic Reviews</SelectItem>
+                        <SelectItem value="Consulting">Consulting</SelectItem>
+                        <SelectItem value="Tax and Legal">Tax and Legal</SelectItem>
                       </SelectContent>
                     </Select>
                   </FormItem>
@@ -298,8 +300,8 @@ export default function ContactForm() {
                       </FormControl>
                       <SelectContent>
                         <div className="flex gap-4">
-                          <SelectItem value="Evaluate Bird for my company">
-                            Evaluate Bird for my company
+                          <SelectItem value="Evaluate Warbler for my company">
+                            Evaluate Warbler for my company
                           </SelectItem>
                         </div>
                         <SelectItem value="Learn More">Learn More</SelectItem>
@@ -340,8 +342,8 @@ export default function ContactForm() {
                   />
                 </div>
                 <div className="text-xs font-light  md:w-3/4 mb-1 bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400">
-                  I agree to Bird&apos; sending marketing communications related
-                  to bird
+                  I agree to Warbler&apos; sending marketing communications related
+                  to Warbler
                 </div>
               </div>
 

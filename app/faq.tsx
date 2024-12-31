@@ -22,9 +22,9 @@ const FAQS = () => {
             </div>
             <Accordion type="single" collapsible>
     <AccordionItem value="item-1">
-      <AccordionTrigger>What is Bird?</AccordionTrigger>
+      <AccordionTrigger>What is Warbler?</AccordionTrigger>
       <AccordionContent>
-        Bird is a full fledge marketing agency that specializes in branding, web design, and digital marketing.
+        <span className="font-bold text-yellow-700">Warbler</span> is a full fledge consulting agency that specializes in business solutions, conpliance and advisory services. We help businesses grow and scale by providing them with the right tools and resources. We also help businesses comply with the latest regulations and standards. We are a team of experts with years of experience in the industry
       </AccordionContent>
     </AccordionItem>
     <AccordionItem value="item-2">
