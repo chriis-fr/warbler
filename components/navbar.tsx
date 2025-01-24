@@ -170,19 +170,19 @@ const Navbar = () => {
                   Our Team
                 </Link>
                 <Link
-                  href="/"
+                  href="/mission"
                   className="block hover:text-gray-700"
                   onClick={() => setIsBrandsOpen(false)}
                 >
                   Our Mission
                 </Link>
-                <Link
+                {/* <Link
                   href="/"
                   className="block hover:text-gray-700"
                   onClick={() => setIsBrandsOpen(false)}
                 >
                   About Us
-                </Link>
+                </Link> */}
               </div>
             )}
           </div>

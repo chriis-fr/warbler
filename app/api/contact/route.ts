@@ -20,18 +20,18 @@ export async function POST(req: Request) {
 
 
       const transporter = nodemailer.createTransport({
-        host: "flexyledger@gmail.com",
+        host: "caspianodhis@gmail.com",
         port: 465,
         secure: true,
         auth: {
-          user: "flexycode.dev@gmail.com",
+          user: "caspianodhis@gmail.com",
           pass: "bsel kcxt drvb srcx",
         },
       });
 
       const mailOptions = {
         from: email,
-        to: "flexycode.dev@gmail.com",
+        to: "caspianodhis@gmail.com",
         subject: "Contact Form Submission",
         html: `
                     <h1>Contact Form</h1>

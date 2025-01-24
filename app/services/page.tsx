@@ -12,7 +12,7 @@ const services = [
     features: [
       "Regulatory advisory and compliance",
       "Tax optimization and planning",
-      "Legal counsel and representation",
+      "Tax filing",
       "Proactive risk assessments",
     ],
     style:
