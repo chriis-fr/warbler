@@ -55,7 +55,7 @@ export default function Page() {
       </div>
 
       {/* Quote Section */}
-      <div
+      {/* <div
         className={cn(
           "flex items-center justify-center text-center bottom-0 text-sm md:text-lg xl:text-2xl pt-10 pb-8 px-6 text-white",
           font.className
@@ -63,7 +63,7 @@ export default function Page() {
       >
         &quot;We got rid of nearly a dozen different tools because of what
         Warbler does for us.&quot;
-      </div>
+      </div> */}
     </div>
   );
 }
