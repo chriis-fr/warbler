@@ -51,7 +51,7 @@ export default function Home() {
   };
 
   return (
-    <div className="w-full md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden">
+    <div className="w-full md:items-center md:justify-center bg-black/[0.96] bg-white text-black antialiased bg-grid-white/[0.02] relative overflow-hidden">
       <Navbar
         // scrollToWebsiteDesign={scrollToWebsiteDesign}
         // scrollToGraphicDesign={scrollToGraphicDesign}
@@ -62,16 +62,16 @@ export default function Home() {
 
       <Spotlight className="hidden md:flex md:-top-80 left-80  " fill="white" />
       <div className="p-4 mx-auto relative z-10 w-full pt-10 md:pt-20 px-2">
-        <div className="text-4xl pb-5 md:text-7xl px-6 text-center  bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to bg-neutral-400 bg-opacity-50">
+        <div className="text-4xl pb-5 md:text-7xl px-6   bg-clip-text text-transparent bg-gradient-to-b from-black to bg-neutral-400 bg-opacity-50">
           Transforming businesses <br /> for global expansion
         </div>
-        <p className="mt-4 text-lg font-normal  text-neutral-300 max-w-lg text-center mx-auto px-4">
+        <p className="mt-4 text-lg font-normal  text-black max-w-lg text-left mx-auto px-4">
           At <span className="font-bold text-yellow-300">Warbler Consultancy</span> we provide custom tailored solutions for your business offering a wide range of solutiions including legal and tax guidance, bookkeeping, audit and assurance.
         </p>
 
         <Link
           href={"/book"}
-          className="cursor-pointer flex items-center justify-center border rounded-full w-48 p-2  mx-auto my-6 text-white "
+          className="cursor-pointer flex items-center justify-center border rounded-full w-48 p-2  mx-auto my-6 text-black bg-slate-200 "
         >
           Book a call
         </Link>
@@ -79,18 +79,7 @@ export default function Home() {
         <div className="w-full pt-20">
           <SliderOne />
         </div>
-        {/* <div ref={websiteDesignRef}>
-          <WebsiteDesign />
-        </div>
-        <div ref={graphicDesignRef}>
-          <GraphicDesign />
-        </div>
-        <div ref={shopifyStoresRef}>
-          <ShopifyStores />
-        </div>
-        <div ref={brandsRef}>
-          <Brands />
-        </div> */}
+       
         <div id ='services'>
         <Services />
         </div>

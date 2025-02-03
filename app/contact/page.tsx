@@ -123,7 +123,7 @@ export default function ContactForm() {
   }
 
   return (
-    <div className=" w-full   md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden ">
+    <div className=" w-full   md:items-center md:justify-center bg-black/[0.96] bg-white antialiased bg-grid-white/[0.02] relative overflow-hidden ">
       <Navbar
         // scrollToWebsiteDesign={() => {}}
         // scrollToGraphicDesign={() => {}}
@@ -133,14 +133,14 @@ export default function ContactForm() {
       />
       <div className="md:flex items-start justify-center md:py-20 px-6">
         <div className="">
-          <div className="text-5xl font-medium  w-full md:w-2/3  pb-5 md:text-7xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
+          <div className="text-5xl font-medium  w-full md:w-2/3  pb-5 md:text-7xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-black bg-opacity-50">
             Contact our team
           </div>
           <div
             className="
               
               py-4
-              text-gray-300
+              text-black
                     "
           >
             Let&apos;s talk about how Warbler can help you work better.
@@ -178,6 +178,7 @@ export default function ContactForm() {
             h-full
             border rounded-3xl p-10
             md:w-1/3
+            text-black
             
             
                      
@@ -189,7 +190,7 @@ export default function ContactForm() {
                   name="first_name"
                   render={({ field }) => (
                     <FormItem className="items-center justify-center  w-full">
-                      <FormLabel className="text-sm bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
+                      <FormLabel className="text-sm bg-clip-text  text-transparent bg-gradient-to-b from-black to-neutral-400 bg-opacity-50">
                         First name *
                       </FormLabel>
                       <FormControl>
@@ -204,7 +205,7 @@ export default function ContactForm() {
                   name="last_name"
                   render={({ field }) => (
                     <FormItem className="items-center justify-center  w-full">
-                      <FormLabel className="text-sm bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
+                      <FormLabel className="text-sm bg-clip-text text-transparent bg-gradient-to-b from-black to-neutral-400 bg-opacity-50">
                         Last name *
                       </FormLabel>
                       <FormControl>
@@ -220,7 +221,7 @@ export default function ContactForm() {
                 name="email"
                 render={({ field }) => (
                   <FormItem className="items-center justify-center  w-full">
-                    <FormLabel className="text-sm bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
+                    <FormLabel className="text-sm bg-clip-text text-transparent bg-gradient-to-b from-black to-neutral-400 bg-opacity-50">
                       Email *
                     </FormLabel>
                     <FormControl>
@@ -235,7 +236,7 @@ export default function ContactForm() {
                 name="company_name"
                 render={({ field }) => (
                   <FormItem className="items-center justify-center  w-full">
-                    <FormLabel className="text-sm bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
+                    <FormLabel className="text-sm bg-clip-text text-transparent bg-gradient-to-b from-black to-neutral-400 bg-opacity-50">
                       Company name?
                     </FormLabel>
                     <FormControl>
@@ -250,7 +251,7 @@ export default function ContactForm() {
                 name="services"
                 render={({ field }) => (
                   <FormItem className="items-center justify-center w-full">
-                    <FormLabel className="text-sm bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
+                    <FormLabel className="text-sm bg-clip-text text-transparent bg-gradient-to-b from-black to-neutral-400 bg-opacity-50">
                     Services you are interested in
                     </FormLabel>
                     <Select
@@ -283,7 +284,7 @@ export default function ContactForm() {
                 name="help"
                 render={({ field }) => (
                   <FormItem className="items-center justify-center  w-full">
-                    <FormLabel className="text-sm bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
+                    <FormLabel className="text-sm bg-clip-text text-transparent bg-gradient-to-b from-black to-neutral-400 bg-opacity-50">
                       How can we help ?
                     </FormLabel>
                     <Select
@@ -319,7 +320,7 @@ export default function ContactForm() {
                 name="info"
                 render={({ field }) => (
                   <FormItem className="items-center justify-center w-full">
-                    <FormLabel className="text-sm bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
+                    <FormLabel className="text-sm bg-clip-text text-transparent bg-gradient-to-b from-black to-neutral-400 bg-opacity-50">
                       Anything else ?
                     </FormLabel>
                     <FormControl>
@@ -341,7 +342,7 @@ export default function ContactForm() {
                 "
                   />
                 </div>
-                <div className="text-xs font-light  md:w-3/4 mb-1 bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400">
+                <div className="text-xs font-light  md:w-3/4 mb-1 bg-clip-text text-transparent bg-gradient-to-b from-black to-neutral-400">
                   I agree to Warbler&apos; sending marketing communications related
                   to Warbler
                 </div>

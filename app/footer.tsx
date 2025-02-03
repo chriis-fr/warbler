@@ -10,11 +10,12 @@ import {
 const Footer = () => {
     return ( 
         <div className=" flex items-center justify-center ">
-        <div className=" md:py-10 bg-transparent w-[60%]
+        <div className=" md:py-10 bg-transparent w-full md:w-[60%]
         rounded-3xl
-        text-white
+        text-black
+
         ">
-          <div className=" p-10 md:p-4 md:px-20">
+          <div className=" p-10 md:p-4 md:px-20 ">
             <div className="text-5xl md:text-5xl font-bold text-white">
               Have questions ?
             </div>

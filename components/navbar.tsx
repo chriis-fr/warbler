@@ -35,31 +35,38 @@ const DropDownMenu: React.FC<DropDownMenuProps> = ({ onClose }) => {
       exit={{ opacity: 0, y: "-100%" }}
       transition={{ duration: 0.5 }}
     >
-      <div className="flex flex-col space-y-8">
-        <Link
-          href="/pricing"
-          className="text-lg font-semibold hover:text-gray-700"
+      <div className="flex flex-col space-y-8 ">
+      <Link
+          href="/"
+          className="text-lg font-semibold hover:text-black"
           onClick={onClose}
         >
-          Pricing
+          Home
         </Link>
         <Link
           href="/contact"
-          className="text-lg font-semibold hover:text-gray-700"
+          className="text-lg font-semibold hover:text-black"
           onClick={onClose}
         >
           Contact
         </Link>
         <Link
           href="/book"
-          className="text-lg font-semibold hover:text-gray-700"
+          className="text-lg font-semibold hover:text-black"
           onClick={onClose}
         >
           Book a call
         </Link>
         <Link
+          href="/team"
+          className="text-lg font-semibold hover:text-black"
+          onClick={onClose}
+        >
+          Team
+        </Link>
+        <Link
           href="/services"
-          className="text-lg font-semibold hover:text-gray-700"
+          className="text-lg font-semibold hover:text-black"
           onClick={onClose}
         >
           Services
@@ -118,20 +125,20 @@ const Navbar = () => {
         <div
           className="
             hidden md:flex space-x-10 items-center
-            text-slate-300 text-center 
-            bg-clip-text text-transparent 
+           text-black text-center 
+            bg-clip-text  
             bg-gradient-to-b from-neutral-50
             to bg-neutral-400 bg-opacity-50
             cursor-pointer
           "
         >
-          <Link href="/" className="hover:text-gray-50">
+          <Link href="/" className="hover:text-gray-500">
             Home
           </Link>
           {/* <Link href="/" className="hover:text-gray-50">
             About Us
           </Link> */}
-          <Link href="/" className="hover:text-gray-50">
+          <Link href="/" className="hover:text-gray-500">
             Latest
           </Link>
 
@@ -139,8 +146,8 @@ const Navbar = () => {
           <div className="relative">
             {/* TRIGGER (Brands) */}
             <div
-              className="flex items-center hover:text-gray-50 text-slate-300 text-center 
-            bg-clip-text text-transparent 
+              className="flex items-center hover:text-gray-500 text-black text-center 
+            bg-clip-text  
             bg-gradient-to-b from-neutral-50
             to bg-neutral-400 bg-opacity-50
             cursor-pointer"
@@ -159,7 +166,7 @@ const Navbar = () => {
               <div
                 className="
                   absolute bg-white shadow-md p-4 mt-2 rounded-md w-48
-                  text-slate-900
+                  text-black
                 "
               >
                 <Link
@@ -191,8 +198,8 @@ const Navbar = () => {
           <div className="relative">
             {/* TRIGGER (Pricing) */}
             <div
-              className="flex items-center hover:text-gray-50 text-slate-300 text-center 
-            bg-clip-text text-transparent 
+              className="flex items-center hover:text-gray-500 text-black text-center 
+            bg-clip-text
             bg-gradient-to-b from-neutral-50
             to bg-neutral-400 bg-opacity-50
             cursor-pointer"

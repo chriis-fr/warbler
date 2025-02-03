@@ -102,14 +102,14 @@ const ServicesPage = () => {
   return (
     <div
       className="w-full md:items-center md:justify-center
-      bg-black/[0.96] antialiased 
+      bg-black/[0.96] bg-white antialiased 
       bg-grid-white/[0.02] relative overflow-hidden"
     >
       <Navbar />
 
       <div className="flex items-center justify-center flex-col">
         {/* SECTION HEADING */}
-        <div className="text-5xl pb-10 md:pb-20 text-slate-300 px-6 text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-500 bg-opacity-50">
+        <div className="text-5xl pb-10 md:pb-20 text-black px-6 text-center bg-clip-text text-transparent bg-gradient-to-b from-black to-neutral-500 bg-opacity-50">
           Our Key Services <br /> Empowering Your Path to Growth
         </div>
 
@@ -118,23 +118,27 @@ const ServicesPage = () => {
           {services.map((service) => (
             <div
               key={service.name}
-              className="h-full flex flex-col justify-between border rounded-3xl px-6"
+              className="h-full flex flex-col justify-between border border-black rounded-3xl px-6"
             >
               {/* CARD TOP SECTION */}
               <div className={service.style}>
-                <div className="text-4xl flex items-center font-medium">
+                <div className=" flex items-center text-black font-medium
+                text-4xl pb-5 text-left
+                bg-clip-text text-transparent bg-gradient-to-b
+                from-blue-500 to-neutral-50 bg-opacity-50 mt-20
+                ">
                   {service.name}
                 </div>
 
                 {/* Description */}
-                <div className="py-6">{service.description}</div>
+                <div className="py-6 text-black">{service.description}</div>
 
                 {/* Features List */}
                 <ul>
                   {service.features.map((feature) => (
                     <li
                       key={feature}
-                      className="text-lg py-2 flex space-x-2 items-center"
+                      className="text-lg py-2 flex space-x-2 items-center text-black"
                     >
                       <PiCheckCircleFill className="text-green-600 mr-2 text-xl" />
                       {feature}

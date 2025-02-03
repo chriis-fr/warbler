@@ -40,7 +40,7 @@ const Brands = () => {
           The best  <br /> choose us
         </div>
 
-        <p className="mt-4 text-lg font-normal  text-neutral-300 max-w-lg text-center mx-auto">
+        <p className="mt-4 text-lg font-normal  text-black max-w-lg text-center mx-auto">
           We are a team capable of transforming all sorts of businesses and corporations to their desired elevation levels, Enabling growth and Scale. 
         </p>
 

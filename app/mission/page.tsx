@@ -24,7 +24,7 @@ export default function Page() {
   };
 
   return (
-    <div className="w-full min-h-screen bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden">
+    <div className="w-full min-h-screen bg-black/[0.96] bg-white antialiased bg-grid-white/[0.02] relative overflow-hidden">
       {/* Navbar */}
       <Navbar />
 
@@ -43,7 +43,7 @@ export default function Page() {
           <ul className="p-4 w-[90%] md:w-[70%] lg:w-[50%]">
             {Missions.map((item, index) => (
               <li
-                className="text-base md:text-lg lg:text-xl text-white py-2 flex space-x-2 items-center"
+                className="text-base md:text-lg lg:text-xl text-black py-2 flex space-x-2 items-center"
                 key={index}
               >
                 <PiCheckCircleFill className="text-green-600 mr-2 text-lg md:text-xl" />
