@@ -62,8 +62,10 @@ export default function Home() {
 
       <Spotlight className="hidden md:flex md:-top-80 left-80  " fill="white" />
       <div className="p-4 mx-auto relative z-10 w-full pt-10 md:pt-20 px-2">
+        <div className=" flex items-center w-full justify-center">
         <div className="text-4xl pb-5 md:text-7xl px-6   bg-clip-text text-transparent bg-gradient-to-b from-black to bg-neutral-400 bg-opacity-50">
           Transforming businesses <br /> for global expansion
+        </div>
         </div>
         <p className="mt-4 text-lg font-normal  text-black max-w-lg text-left mx-auto px-4">
           At <span className="font-bold text-yellow-300">Warbler Consultancy</span> we provide custom tailored solutions for your business offering a wide range of solutiions including legal and tax guidance, bookkeeping, audit and assurance.
