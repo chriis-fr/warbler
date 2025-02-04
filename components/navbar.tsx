@@ -165,10 +165,17 @@ const Navbar = () => {
             {isBrandsOpen && (
               <div
                 className="
-                  absolute bg-white shadow-md p-4 mt-2 rounded-md w-48
+                  absolute bg-white container shadow-md p-4 mt-2 rounded-md w-48
                   text-black
                 "
               >
+                <Link
+                  href="/about"
+                  className="block hover:text-gray-700"
+                  onClick={() => setIsBrandsOpen(false)}
+                >
+                  About Us
+                </Link>
                 <Link
                   href="/team"
                   className="block hover:text-gray-700"
@@ -183,13 +190,6 @@ const Navbar = () => {
                 >
                   Our Mission
                 </Link>
-                {/* <Link
-                  href="/"
-                  className="block hover:text-gray-700"
-                  onClick={() => setIsBrandsOpen(false)}
-                >
-                  About Us
-                </Link> */}
               </div>
             )}
           </div>
@@ -226,15 +226,15 @@ const Navbar = () => {
                   className="block hover:text-gray-700"
                   onClick={() => setIsPricingOpen(false)}
                 >
-                  Tax and legal
+                  Tax
                 </Link>
-                {/* <Link
+                <Link
                   href="/services"
                   className="block hover:text-gray-700"
                   onClick={() => setIsPricingOpen(false)}
                 >
-                  Financial Appraisals
-                </Link> */}
+                  Book Keeping
+                </Link>
                 <Link
                   href="/services"
                   className="block hover:text-gray-700"

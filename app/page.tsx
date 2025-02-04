@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import { useState, useRef } from "react";
 import Navbar from "@/components/navbar";
@@ -11,80 +11,42 @@ import { InfiniteMovingCardsDemo } from "./snippets/infinite-moving-card-snippet
 import Footer from "./footer";
 
 export default function Home() {
-  const [isDropdownVisible, setDropdownVisible] = useState(false);
-  const toggleDropdown = () => {
-    setDropdownVisible(!isDropdownVisible);
-  };
-  const closeDropdown = () => {
-    setDropdownVisible(false);
-  };
-
-  const websiteDesignRef = useRef<HTMLDivElement>(null);
-  const graphicDesignRef = useRef<HTMLDivElement>(null);
-  const shopifyStoresRef = useRef<HTMLDivElement>(null);
-  const brandsRef = useRef<HTMLDivElement>(null);
-  const servicesRef = useRef<HTMLDivElement>(null);
-
-  const scrollToWebsiteDesign = () => {
-    websiteDesignRef.current?.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-      inline: "nearest",
-    });
-  };
-
-  const scrollToGraphicDesign = () => {
-    graphicDesignRef.current?.scrollIntoView({ behavior: "smooth" });
-  };
-
-  const scrollToShopifyStores = () => {
-    shopifyStoresRef.current?.scrollIntoView({ behavior: "smooth" });
-  };
-
-  const scrollToBrands = () => {
-    brandsRef.current?.scrollIntoView({ behavior: "smooth" });
-  };
-
-  // Function to scroll to Services section
-  const scrollToServices = () => {
-    servicesRef.current?.scrollIntoView({ behavior: "smooth" });
-  };
-
   return (
     <div className="w-full md:items-center md:justify-center bg-black/[0.96] bg-white text-black antialiased bg-grid-white/[0.02] relative overflow-hidden">
-      <Navbar
-        // scrollToWebsiteDesign={scrollToWebsiteDesign}
-        // scrollToGraphicDesign={scrollToGraphicDesign}
-        // scrollToShopifyStores={scrollToShopifyStores}
-        // scrollToBrands={scrollToBrands}
-        // scrollToServices={scrollToServices}
-      />
+      <Navbar />
 
-      <Spotlight className="hidden md:flex md:-top-80 left-80  " fill="white" />
+      <Spotlight className="hidden md:flex md:-top-80 left-80" fill="white" />
+      
       <div className="p-4 mx-auto relative z-10 w-full pt-10 md:pt-20 px-2">
-        <div className=" flex items-center w-full justify-center">
-        <div className="text-4xl pb-5 md:text-7xl px-6   bg-clip-text text-transparent bg-gradient-to-b from-black to bg-neutral-400 bg-opacity-50">
-          Transforming businesses <br /> for global expansion
+        {/* SECTION HEADER - RESPONSIVE TEXT ALIGNMENT */}
+        <div className="text-3xl pb-5 md:text-5xl px-6 text-center md:text-left lg:text-left bg-clip-text text-transparent bg-gradient-to-b from-black to bg-neutral-400 bg-opacity-50">
+          Transforming businesses for global expansion
         </div>
+
+        {/* DESCRIPTION SECTION */}
+        <div className="mt-4 text-lg font-normal text-center  md:text-left lg:text-left xl:text-left w-full text-black md:w-full mx-auto md:mx-0 px-4">
+          At <span className="font-bold text-yellow-300">Warbler Consultancy</span>, we provide custom-tailored solutions for your business, <br />  offering a wide range of services including legal and tax guidance, book-keeping, audit, and assurance.
         </div>
-        <p className="mt-4 text-lg font-normal  text-black max-w-lg text-left mx-auto px-4">
-          At <span className="font-bold text-yellow-300">Warbler Consultancy</span> we provide custom tailored solutions for your business offering a wide range of solutiions including legal and tax guidance, bookkeeping, audit and assurance.
-        </p>
 
-        <Link
-          href={"/book"}
-          className="cursor-pointer flex items-center justify-center border rounded-full w-48 p-2  mx-auto my-6 text-black bg-slate-200 "
-        >
-          Book a call
-        </Link>
+        {/* BUTTON CENTERED FOR MOBILE, LEFT FOR DESKTOP */}
+        <div className="flex justify-center">
+          <Link
+            href={"/book"}
+            className="cursor-pointer flex items-center justify-center border rounded-full w-48 p-2 my-6 text-black bg-slate-200"
+          >
+            Book a call
+          </Link>
+        </div>
 
+        {/* SLIDER SECTION */}
         <div className="w-full pt-20">
           <SliderOne />
         </div>
-       
-        <div id ='services'>
-        <Services />
+
+        <div id="services">
+          <Services />
         </div>
+
         <InfiniteMovingCardsDemo />
         <Footer />
       </div>

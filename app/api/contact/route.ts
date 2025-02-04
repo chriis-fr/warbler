@@ -2,7 +2,9 @@ import { NextResponse } from "next/server";
 
 import nodemailer from "nodemailer";
 
+
 export async function POST(req: Request) {
+const password = process.env.EMAIL_PASSWORD
   if (req.method === "POST") {
 
     try {
@@ -20,18 +22,18 @@ export async function POST(req: Request) {
 
 
       const transporter = nodemailer.createTransport({
-        host: "caspianodhis@gmail.com",
+        host: "warblerconsulting@outlook.com",
         port: 465,
         secure: true,
         auth: {
-          user: "caspianodhis@gmail.com",
-          pass: "bsel kcxt drvb srcx",
+          user: "warblerconsulting@outlook.com",
+          pass: password,
         },
       });
 
       const mailOptions = {
         from: email,
-        to: "caspianodhis@gmail.com",
+        to: "warblerconsulting@outlook.com",
         subject: "Contact Form Submission",
         html: `
                     <h1>Contact Form</h1>
