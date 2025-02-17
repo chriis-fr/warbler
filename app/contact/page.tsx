@@ -330,9 +330,10 @@ export default function ContactForm() {
                 )}
               />
 
-              <div className="flex gap-4 items-center">
+              {/* <div className="flex gap-4 items-center border-4" aria-disabled={true}>
                 <div>
                   <Checkbox
+                  defaultChecked={false}
                     className="
                 outline
                 border-2
@@ -340,13 +341,14 @@ export default function ContactForm() {
                 font-light
                 bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400
                 "
+                
                   />
                 </div>
                 <div className="text-xs font-light  md:w-3/4 mb-1 bg-clip-text text-transparent bg-gradient-to-b from-black to-neutral-400">
                   I agree to Warbler&apos; sending marketing communications related
                   to Warbler
                 </div>
-              </div>
+              </div> */}
 
               <div className="flex items-center gap-4">
                 <Button
